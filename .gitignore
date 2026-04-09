@@ -1,0 +1,24 @@
+# Large data files
+*.csv
+*.npy
+*.joblib
+
+# Python environment
+.venv/
+venv/
+env/
+__pycache__/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# BERT model (optional - large)
+bert-base-uncased/
+
+# Other
+*.pdf

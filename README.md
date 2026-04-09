@@ -1,0 +1,144 @@
+# Sentiment Analysis with BERT and Logistic Regression
+
+This project implements a sentiment analysis classifier using BERT (Bidirectional Encoder Representations from Transformers) embeddings combined with Logistic Regression. The model is trained on the Sentiment140 dataset and deployed as a Streamlit web application for real-time sentiment prediction.
+
+## Features
+
+- **Data Preprocessing**: Cleans and preprocesses the Sentiment140 dataset, including text cleaning, stopword removal, and sentiment label mapping
+- **BERT Embeddings**: Generates contextual embeddings using the pre-trained BERT-base-uncased model
+- **Model Training**: Trains a Logistic Regression classifier on BERT embeddings for binary sentiment classification (positive/negative)
+- **Web Application**: Interactive Streamlit app for real-time sentiment prediction on user-input text
+- **Pseudo-Labeling**: Implements semi-supervised learning techniques to expand the training dataset
+- **Visualization**: Performance metrics and model evaluation visualizations
+- **Balanced Dataset Creation**: Creates a balanced subset of the Sentiment140 data for improved model training
+
+## Project Structure
+
+```
+├── app.py                          # Streamlit web application for sentiment prediction
+├── train_sentiment_model.py        # Script to train the Logistic Regression model
+├── preprocess_sentiment140.py      # Data preprocessing pipeline
+├── bert_embeddings.py              # BERT embedding generation
+├── create_balanced_subset.py       # Create balanced dataset subset
+├── pseudo_labeling_tweets.py       # Pseudo-labeling implementation
+├── pesudo_label.py                 # Additional pseudo-labeling script (note: filename has typo)
+├── visualize_performance.py        # Model performance visualization
+├── download_bert_model.py          # BERT model download utility
+├── sentiment140.csv                # Raw Sentiment140 dataset
+├── cleaned_sentiment140.csv        # Preprocessed dataset
+├── balanced_sentiment140.csv       # Balanced subset of preprocessed data
+├── bert_embeddings.npy             # Generated BERT embeddings
+├── sentiment_model.joblib          # Trained Logistic Regression model
+├── bert-base-uncased/              # Downloaded BERT model directory
+└── README.md                       # Project documentation
+```
+
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone <repository-url>
+   cd sentiment-analysis-bert
+   ```
+
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   Required packages:
+   - streamlit
+   - transformers
+   - torch
+   - scikit-learn
+   - pandas
+   - numpy
+   - nltk
+   - joblib
+
+3. Download NLTK stopwords:
+   ```python
+   import nltk
+   nltk.download('stopwords')
+   ```
+
+## Usage
+
+### Data Preparation
+
+1. **Preprocess the Sentiment140 dataset**:
+   ```bash
+   python preprocess_sentiment140.py
+   ```
+
+2. **Create a balanced subset** (optional, for faster training):
+   ```bash
+   python create_balanced_subset.py
+   ```
+
+3. **Generate BERT embeddings**:
+   ```bash
+   python bert_embeddings.py
+   ```
+
+### Model Training
+
+Train the Logistic Regression model on BERT embeddings:
+```bash
+python train_sentiment_model.py
+```
+
+### Web Application
+
+Run the Streamlit web application for sentiment prediction:
+```bash
+streamlit run app.py
+```
+
+Open your browser and navigate to the provided local URL to interact with the sentiment classifier.
+
+### Pseudo-Labeling (Optional)
+
+Expand the training dataset using pseudo-labeling:
+```bash
+python pseudo_labeling_tweets.py
+```
+
+### Visualization
+
+Visualize model performance metrics:
+```bash
+python visualize_performance.py
+```
+
+## Model Architecture
+
+1. **Input Processing**: Text is tokenized and encoded using BERT tokenizer
+2. **Embedding Generation**: BERT-base-uncased model generates 768-dimensional embeddings
+3. **Classification**: Logistic Regression classifier predicts sentiment (0: Negative, 1: Positive)
+
+## Dataset
+
+The project uses the Sentiment140 dataset, which contains 1.6 million tweets labeled for sentiment. The dataset is preprocessed to:
+- Remove URLs, mentions, and hashtags
+- Convert to lowercase
+- Remove punctuation and stopwords
+- Map sentiment labels (0: Negative, 4: Positive → 0: Negative, 1: Positive)
+
+## Performance
+
+The model achieves competitive performance on the Sentiment140 test set. Performance metrics are displayed during training and can be visualized using the provided visualization script.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Sentiment140 dataset by Stanford University
+- BERT model by Google
+- Hugging Face Transformers library
