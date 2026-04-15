@@ -20,6 +20,12 @@
 
 ---
 
+## 📸 Demo
+
+![Demo](https://raw.githubusercontent.com/Ak21218/YOUR-REPO-NAME/main/demo.png)
+
+---
+
 ## ▶️ How to Run
 
 ```bash
@@ -64,23 +70,6 @@ This project implements a sentiment analysis classifier using BERT (Bidirectiona
 
 ## Project Structure
 
-```
-├── app.py                          # Streamlit web application for sentiment prediction
-├── train_sentiment_model.py        # Script to train the Logistic Regression model
-├── preprocess_sentiment140.py      # Data preprocessing pipeline
-├── bert_embeddings.py              # BERT embedding generation
-├── create_balanced_subset.py       # Create balanced dataset subset
-├── pseudo_labeling_tweets.py       # Pseudo-labeling implementation
-├── pesudo_label.py                 # Additional pseudo-labeling script (note: filename has typo)
-├── visualize_performance.py        # Model performance visualization
-├── download_bert_model.py          # BERT model download utility
-├── sentiment140.csv                # Raw Sentiment140 dataset
-├── cleaned_sentiment140.csv        # Preprocessed dataset
-├── balanced_sentiment140.csv       # Balanced subset of preprocessed data
-├── bert_embeddings.npy             # Generated BERT embeddings
-├── sentiment_model.joblib          # Trained Logistic Regression model
-├── bert-base-uncased/              # Downloaded BERT model directory
-└── README.md                       # Project documentation
 ```
 
 ## Installation
