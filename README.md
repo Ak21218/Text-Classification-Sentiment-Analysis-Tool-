@@ -25,8 +25,7 @@
 ## 📸 Demo
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Ak21218/
-Text-Classification-Sentiment-Analysis-Tool-/main/demo.png" width="600"/>
+  <img src="https://raw.githubusercontent.com/Ak21218/Text-Classification-Sentiment-Analysis-Tool-/master/demo.png" width="600"/>
 </p>
 
 ---
@@ -34,7 +33,7 @@ Text-Classification-Sentiment-Analysis-Tool-/main/demo.png" width="600"/>
 ## ▶️ How to Run
 
 ```bash
-git clone https://github.com/Ak21218/YOUR-REPO-NAME.git
-cd YOUR-REPO-NAME
+git clone https://github.com/Ak21218/Text-Classification-Sentiment-Analysis-Tool-.git
+cd Text-Classification-Sentiment-Analysis-Tool-
 pip install -r requirements.txt
 streamlit run app.py
