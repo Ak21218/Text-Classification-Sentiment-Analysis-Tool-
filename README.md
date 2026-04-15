@@ -24,6 +24,10 @@
 
 ![Demo](demo.png)
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Ak21218/YOUR-REPO-NAME/main/demo.png" width="600"/>
+</p>
+
 ---
 
 ## ▶️ How to Run
@@ -41,16 +45,6 @@ sentiment-analysis/
 ├── app.py
 ├── requirements.txt
 ├── README.md
-
----
-
-Example Output
-
-Input:
-"I love this product!"
-
-Output:
-Positive 😊
 
 ---
 
