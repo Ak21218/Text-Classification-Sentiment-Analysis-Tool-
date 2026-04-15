@@ -1,3 +1,27 @@
+# 📝 Sentiment Analysis Tool (BERT + Logistic Regression)
+
+🚀 A Machine Learning project that classifies text into **Positive, Negative, or Neutral sentiments** using NLP techniques.
+
+---
+
+## 📌 Features
+- 🔍 Text sentiment classification  
+- 🤖 BERT embeddings + Logistic Regression  
+- 📊 Works on real-world text data  
+- ⚡ Fast prediction  
+
+---
+
+## 🧠 Tech Stack
+- Python 🐍  
+- Scikit-learn  
+- Transformers (BERT)  
+- Pandas, NumPy  
+
+---
+
+## 📂 Project Structure
+
 # Sentiment Analysis with BERT and Logistic Regression
 
 This project implements a sentiment analysis classifier using BERT (Bidirectional Encoder Representations from Transformers) embeddings combined with Logistic Regression. The model is trained on the Sentiment140 dataset and deployed as a Streamlit web application for real-time sentiment prediction.
