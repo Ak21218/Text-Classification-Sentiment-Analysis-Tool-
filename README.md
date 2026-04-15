@@ -30,10 +30,14 @@
 
 ---
 
-## ▶️ How to Run
+## ⚙️ Installation
 
 ```bash
 git clone https://github.com/Ak21218/Text-Classification-Sentiment-Analysis-Tool-.git
 cd Text-Classification-Sentiment-Analysis-Tool-
+pip install -r requirements.txt
+
+streamlit run app.py
+
 pip install -r requirements.txt
 streamlit run app.py
