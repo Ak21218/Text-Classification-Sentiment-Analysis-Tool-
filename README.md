@@ -16,11 +16,37 @@
 - Python 🐍  
 - Scikit-learn  
 - Transformers (BERT)  
-- Pandas, NumPy  
+- Pandas, NumPy
 
 ---
 
+## ▶️ How to Run
+
+```bash
+git clone https://github.com/Ak21218/YOUR-REPO-NAME.git
+cd YOUR-REPO-NAME
+pip install -r requirements.txt
+python app.py
 ## 📂 Project Structure
+sentiment-analysis/
+│
+├── data/
+├── model/
+├── app.py
+├── requirements.txt
+├── README.md
+
+---
+
+Example Output
+
+Input:
+"I love this product!"
+
+Output:
+Positive 😊
+
+---
 
 # Sentiment Analysis with BERT and Logistic Regression
 
@@ -160,9 +186,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Sentiment140 dataset by Stanford University
-- BERT model by Google
-- Hugging Face Transformers library
