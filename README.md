@@ -22,7 +22,7 @@
 
 ## 📸 Demo
 
-![Demo](https://raw.githubusercontent.com/Ak21218/YOUR-REPO-NAME/main/demo.png)
+![Demo](demo.png)
 
 ---
 
